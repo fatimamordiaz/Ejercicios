@@ -11,3 +11,13 @@ h2{
     color: palevioletred;
     text-align: center;
 }
+table{
+    text-align: center;
+    border: 5px solid violet;
+}
+td{
+    border: 2px solid blueviolet;
+}
+th{
+    border: 3px solid paleturquoise;
+}
