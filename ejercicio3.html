@@ -1,0 +1,80 @@
+<!--Formularios-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="./css2/img2/funeral.png">
+    <link rel="stylesheet" href="./css2/nosotros.css">
+
+</head>
+<body>
+    <header>
+        <h1>Aprende de nosotros</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post">
+            <fieldset><!--Permite agrupar por campos-->
+                <legend>Datos acerca de nosotros</legend>
+
+                 <label for="name" name="nombre">Nombre:</label>
+                 <input id ="name" type="text" placeholder="Fatima" required><br>
+                 <label for="apellido">Apellido: </label>
+                 <input id="apellido" type="text" placeholder="Moreno Diaz" required><br>
+                 <label for="email">Correo electronico:</label>
+                 <input id="email" type="email" placeholder="fatima@gmail.com" autocomplete="email"><br>
+                 <label for="tel">Telefono:</label>
+                 <input id="tel" type="number" placeholder="5510256480"><br>
+            </fieldset>
+            <fieldset><!--Permite agrupar por campos-->
+                <legend>Detalles del pedido</legend>
+
+                <label for="number of tamales"> ¿Cuantos tamales necesitas?</label>
+                <input id= "number og tamales" type="number" min="20" max="500"> <br>
+                
+
+                <label for="atole">¿Cuantos litros de atoles necesitas?</label>
+                <input id= "atole" type="number"min="20" max="500"><br>
+
+                <label for="date">¿Cuando es el evento</label>
+                <input id = "date" type="date" required>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de envio</legend>
+                <!--Nuestro usuario debe hacer un scroll infinito hasta encontrar la opcion deseada-->
+                <select name="stores" id="stores">
+                    <option value="Sucursal Azcapotzalco">Sucursal Azcapotzalco</option>
+                    <option value="Sucursal Vallejo">Sucursal Vallejo</option>
+                    <option value="Sucursal Ferreria">Sucursal Ferreria</option>
+                    <option value="Envio a Domicilio">Envio a Domicilio</option>
+                </select>
+                <!--Le daremos la opcion al usuario para escoger apartir de las primeras letras de lo que busca en lugar de scrollear-->
+                <input list="storestwo">
+                <datalist id="storestwo">
+                    <option value="Sucursal Azcapotzalco">Sucursal Azcapotzalco</option>
+                    <option value="Sucursal Vallejo">Sucursal Vallejo</option>
+                    <option value="Sucursal Ferreria">Sucursal Ferreria</option>
+                    <option value="Envio a Domicilio">Envio a Domicilio</option>
+                </datalist>
+
+                <!--Inputs de tipo radio-->
+                <label for="sucursal"><input id="sucursal" type="radio" name="type-of-delivery"> Recoger en Sucursal</label>
+                <label for="domicilio"><input id="domicilio" type="radio" name="type-of-delivery"> Envio a Domicilio </label>
+                <br>
+
+                <!--Casilla de verificacion-->
+                <label for="terms"><input id="terms" type="checkbox">Acepto terminos y condiciones</label>
+                <br>
+                <!--Boton de envio-->
+                <button type="submit">Enviar ya</button>
+
+            </fieldset>
+            </form><!--Action y method son dos atributos principales para los formularios-->
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-style: italic;
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+form{
+    border: 4px double blueviolet;
+    padding: 15px;
+    margin: 0 auto;
+    width: 700px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+fieldset{
+    padding: 2em;
+    border-radius: 5px;
+    border-color: palevioletred;
+}
+legend{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    background-color: lightpink;
+    border-radius: 5px;
+}
